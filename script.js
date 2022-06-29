@@ -11,7 +11,7 @@ let names = [
 
 const createLeaderboard = () => {
   const _names = localStorage.getItem("names");
-  if (_names.length) {
+  if (_names?.length) {
     names = JSON.parse(_names);
   }
   else {
